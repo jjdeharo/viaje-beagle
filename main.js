@@ -30,6 +30,51 @@ const TAG_LABELS = {
     corales: "Corales",
     etnografía: "Etnografía"
   },
+  ca: {
+    inicio: "Inici",
+    fin: "Fi",
+    historia: "Història",
+    geología: "Geologia",
+    paleontología: "Paleontologia",
+    biogeografía: "Biogeografia",
+    botánica: "Botànica",
+    zoología: "Zoologia",
+    ecología: "Ecologia",
+    sismología: "Sismologia",
+    volcanismo: "Vulcanisme",
+    corales: "Coralls",
+    etnografía: "Etnografia"
+  },
+  gl: {
+    inicio: "Comezo",
+    fin: "Fin",
+    historia: "Historia",
+    geología: "Xeoloxía",
+    paleontología: "Paleontoloxía",
+    biogeografía: "Biogeografía",
+    botánica: "Botánica",
+    zoología: "Zooloxía",
+    ecología: "Ecoloxía",
+    sismología: "Sismoloxía",
+    volcanismo: "Vulcanismo",
+    corales: "Corais",
+    etnografía: "Etnografía"
+  },
+  eu: {
+    inicio: "Hasiera",
+    fin: "Amaiera",
+    historia: "Historia",
+    geología: "Geologia",
+    paleontología: "Paleontologia",
+    biogeografía: "Biogeografia",
+    botánica: "Botanika",
+    zoología: "Zoologia",
+    ecología: "Ekologia",
+    sismología: "Sismologia",
+    volcanismo: "Sumendismo",
+    corales: "Koralak",
+    etnografía: "Etnografia"
+  },
   en: {
     inicio: "Departure",
     fin: "Return",
@@ -47,6 +92,8 @@ const TAG_LABELS = {
   }
 };
 
+const LANG_STORAGE_KEY = "viaje-beagle:lang";
+
 const state = {
   lang: "es",
   translations: new Map(),
@@ -58,6 +105,8 @@ const state = {
     weight: 3,
     opacity: 0.85
   }),
+  baseLayers: null,
+  layerControl: null,
   map: null,
   about: null,
   selectedId: null,
@@ -87,10 +136,86 @@ const aboutSources = document.getElementById("aboutSources");
 
 let previouslyFocusedElement = null;
 
+function isSupportedLanguage(lang) {
+  return Boolean(TAG_LABELS[lang]);
+}
+
+function getStorage() {
+  try {
+    if (typeof window !== "undefined" && "localStorage" in window) {
+      return window.localStorage;
+    }
+  } catch (error) {
+    console.warn("No se puede acceder a localStorage", error);
+  }
+  return null;
+}
+
+function getStoredLanguage() {
+  const storage = getStorage();
+  if (!storage) {
+    return null;
+  }
+  try {
+    return storage.getItem(LANG_STORAGE_KEY);
+  } catch (error) {
+    console.warn("No se pudo leer el idioma almacenado", error);
+    return null;
+  }
+}
+
+function storeLanguage(lang) {
+  const storage = getStorage();
+  if (!storage) {
+    return;
+  }
+  try {
+    storage.setItem(LANG_STORAGE_KEY, lang);
+  } catch (error) {
+    console.warn("No se pudo guardar el idioma seleccionado", error);
+  }
+}
+
+function getLocalizedValue(feature, key) {
+  const dict = feature.properties?.[`${key}_i18n`];
+  if (dict && typeof dict === "object") {
+    return (
+      dict[state.lang] ||
+      dict.es ||
+      dict.en ||
+      Object.values(dict)[0]
+    );
+  }
+  return feature.properties?.[key];
+}
+
+function getLocalizedLinkLabel(link) {
+  const dict = link?.label_i18n;
+  if (dict && typeof dict === "object") {
+    return (
+      dict[state.lang] ||
+      dict.es ||
+      dict.en ||
+      Object.values(dict)[0]
+    );
+  }
+  return link?.label;
+}
+
 async function init() {
   try {
+    const storedLanguage = getStoredLanguage();
+    if (storedLanguage && isSupportedLanguage(storedLanguage)) {
+      state.lang = storedLanguage;
+    }
+    document.documentElement.lang = state.lang;
+    if (languageSwitcher && isSupportedLanguage(languageSwitcher.value) && languageSwitcher.value !== state.lang) {
+      languageSwitcher.value = state.lang;
+    }
+
     await loadTranslations(state.lang);
     applyTranslations();
+    updateDetailDefaultMessage();
 
     state.map = initMap();
     state.markerLayer.addTo(state.map);
@@ -145,12 +270,30 @@ function initMap() {
     attribution: "&copy; OpenStreetMap contributors, Tiles style by Humanitarian OpenStreetMap Team"
   });
 
-  L.control.layers({
-    "OpenStreetMap": osm,
-    "OSM Humanitario": hot
-  }).addTo(map);
+  state.baseLayers = { osm, hot };
+  state.layerControl = createLayerControl(map);
 
   return map;
+}
+
+function createLayerControl(map) {
+  if (!state.baseLayers) {
+    return null;
+  }
+  const labels = {};
+  labels[getTranslation("map.base.osm") || "OpenStreetMap"] = state.baseLayers.osm;
+  labels[getTranslation("map.base.hot") || "Humanitarian OSM"] = state.baseLayers.hot;
+  return L.control.layers(labels).addTo(map);
+}
+
+function updateLayerControlLabels() {
+  if (!state.map || !state.baseLayers) {
+    return;
+  }
+  if (state.layerControl) {
+    state.layerControl.remove();
+  }
+  state.layerControl = createLayerControl(state.map);
 }
 
 function buildMeta(feature) {
@@ -223,7 +366,8 @@ function buildMarkers() {
       if (element && !element.dataset.keyboardBound) {
         element.setAttribute("tabindex", "0");
         element.setAttribute("role", "button");
-        element.setAttribute("aria-label", `${feature.meta.position}. ${feature.properties.nombre}`);
+        const localizedName = getLocalizedValue(feature, "nombre");
+        element.setAttribute("aria-label", `${feature.meta.position}. ${localizedName}`);
         element.dataset.keyboardBound = "true";
         element.addEventListener("keydown", (event) => {
           if (event.key === "Enter" || event.key === " ") {
@@ -242,7 +386,9 @@ function buildMarkers() {
 }
 
 function buildPopupContent(feature) {
-  const { nombre, fecha_inicio, fecha_fin, interes, tags } = feature.properties;
+  const { fecha_inicio, fecha_fin, tags } = feature.properties;
+  const nombre = getLocalizedValue(feature, "nombre");
+  const interes = getLocalizedValue(feature, "interes");
   const range = formatDateRange(fecha_inicio, fecha_fin);
   const chips = tags
     .map((tag) => `<span class="chip">${getTagLabel(tag)}</span>`)
@@ -309,7 +455,10 @@ function setActiveMarker(marker) {
 }
 
 function renderDetail(feature) {
-  const { nombre, fecha_inicio, fecha_fin, interes, texto, enlaces, tags } = feature.properties;
+  const { fecha_inicio, fecha_fin, enlaces, tags } = feature.properties;
+  const nombre = getLocalizedValue(feature, "nombre");
+  const interes = getLocalizedValue(feature, "interes");
+  const texto = getLocalizedValue(feature, "texto");
   const range = formatDateRange(fecha_inicio, fecha_fin);
   const tagBadges = tags
     .map((tag) => `<span>${getTagLabel(tag)}</span>`)
@@ -317,8 +466,10 @@ function renderDetail(feature) {
   const linkList = enlaces && enlaces.length
     ? enlaces
         .map(
-          (link) =>
-            `<a href="${link.url}" target="_blank" rel="noopener">${link.label}</a>`
+          (link) => {
+            const label = getLocalizedLinkLabel(link);
+            return `<a href="${link.url}" target="_blank" rel="noopener">${label}</a>`;
+          }
         )
         .join(" ")
     : "";
@@ -341,8 +492,7 @@ function renderDetail(feature) {
 function resetDetail() {
   state.selectedId = null;
   setActiveMarker(null);
-  const message = getTranslation("ui.detalle.default");
-  detailContent.textContent = message;
+  updateDetailDefaultMessage();
 }
 
 function applyFilters(options = {}) {
@@ -368,8 +518,8 @@ function applyFilters(options = {}) {
       }
     }
     if (query) {
-      const name = feature.properties.nombre.toLowerCase();
-      if (!name.includes(query)) {
+      const localized = (getLocalizedValue(feature, "nombre") || "").toLowerCase();
+      if (!localized.includes(query)) {
         return false;
       }
     }
@@ -484,16 +634,25 @@ function attachListeners() {
 
   languageSwitcher.addEventListener("change", async () => {
     state.lang = languageSwitcher.value;
+    if (!isSupportedLanguage(state.lang)) {
+      state.lang = "es";
+      languageSwitcher.value = state.lang;
+    }
     document.documentElement.lang = state.lang;
+    storeLanguage(state.lang);
     await loadTranslations(state.lang);
     applyTranslations();
     refreshTagLabels();
+    refreshMarkers();
+    updateLayerControlLabels();
     applyFilters();
     if (state.selectedId) {
       const feature = state.data.find((item) => item.meta.id === state.selectedId);
       if (feature) {
         renderDetail(feature);
       }
+    } else {
+      updateDetailDefaultMessage();
     }
     populateAbout();
   });
@@ -510,6 +669,14 @@ function attachListeners() {
       closeAboutModal();
     }
   });
+}
+
+function updateDetailDefaultMessage() {
+  if (!detailContent || state.selectedId) {
+    return;
+  }
+  const message = getTranslation("ui.detalle.default") || detailContent.textContent;
+  detailContent.textContent = message;
 }
 
 async function loadTranslations(lang) {
@@ -559,6 +726,24 @@ function refreshTagLabels() {
   document.querySelectorAll("[data-tag-value]").forEach((el) => {
     const tag = el.dataset.tagValue;
     el.textContent = getTagLabel(tag);
+  });
+}
+
+function refreshMarkers() {
+  state.data.forEach((feature) => {
+    const marker = state.markers.get(feature.meta.id);
+    if (!marker) {
+      return;
+    }
+    const popup = marker.getPopup();
+    if (popup) {
+      popup.setContent(buildPopupContent(feature));
+    }
+    const element = marker.getElement();
+    if (element) {
+      const localizedName = getLocalizedValue(feature, "nombre");
+      element.setAttribute("aria-label", `${feature.meta.position}. ${localizedName}`);
+    }
   });
 }
 

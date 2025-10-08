@@ -1,6 +1,41 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.org/beagle.schema.json",
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "required": [
+        "es",
+        "ca",
+        "gl",
+        "eu",
+        "en"
+      ],
+      "properties": {
+        "es": {
+          "type": "string",
+          "minLength": 3
+        },
+        "ca": {
+          "type": "string",
+          "minLength": 3
+        },
+        "gl": {
+          "type": "string",
+          "minLength": 3
+        },
+        "eu": {
+          "type": "string",
+          "minLength": 3
+        },
+        "en": {
+          "type": "string",
+          "minLength": 3
+        }
+      },
+      "additionalProperties": false
+    }
+  },
   "title": "Ruta del HMS Beagle",
   "type": "object",
   "required": [
@@ -57,6 +92,15 @@
                 "minLength": 300,
                 "maxLength": 600
               },
+              "nombre_i18n": {
+                "$ref": "#/$defs/localizedText"
+              },
+              "interes_i18n": {
+                "$ref": "#/$defs/localizedText"
+              },
+              "texto_i18n": {
+                "$ref": "#/$defs/localizedText"
+              },
               "enlaces": {
                 "type": "array",
                 "items": {
@@ -69,6 +113,9 @@
                     "label": {
                       "type": "string",
                       "minLength": 1
+                    },
+                    "label_i18n": {
+                      "$ref": "#/$defs/localizedText"
                     },
                     "url": {
                       "type": "string",

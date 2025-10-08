@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Viaje del HMS Beagle</title>
+    <title data-i18n="ui.title">Ruta científica del HMS Beagle</title>
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -13,14 +13,17 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#map">Saltar al mapa</a>
+    <a class="skip-link" href="#map" data-i18n="ui.skip">Saltar al mapa</a>
     <header>
-      <h1>Ruta científica del HMS Beagle</h1>
+      <h1 data-i18n="ui.heading">Ruta científica del HMS Beagle</h1>
       <div class="header-actions">
         <label for="languageSwitcher" data-i18n="ui.idioma">Idioma</label>
         <select id="languageSwitcher" aria-label="Idioma" data-i18n-aria-label="ui.idioma">
-          <option value="es" selected>Español</option>
-          <option value="en">English</option>
+          <option value="es" selected data-i18n="ui.lang.es">Español</option>
+          <option value="ca" data-i18n="ui.lang.ca">Català</option>
+          <option value="gl" data-i18n="ui.lang.gl">Galego</option>
+          <option value="eu" data-i18n="ui.lang.eu">Euskara</option>
+          <option value="en" data-i18n="ui.lang.en">English</option>
         </select>
         <button id="aboutButton" type="button" data-i18n="ui.acerca">Acerca de</button>
       </div>
@@ -81,10 +84,15 @@
         <div id="status" role="status" aria-live="polite" data-i18n="ui.loading">Cargando datos...</div>
       </aside>
       <section class="map-wrapper">
-        <div id="map" role="application" aria-label="Mapa interactivo de la ruta del Beagle"></div>
+        <div
+          id="map"
+          role="application"
+          aria-label="Mapa interactivo de la ruta del Beagle"
+          data-i18n-aria-label="ui.map.aria"
+        ></div>
       </section>
       <aside class="panel panel-detail">
-        <h2 id="detailTitle">Detalle</h2>
+        <h2 id="detailTitle" data-i18n="ui.detalle.titulo">Detalle</h2>
         <div id="detailContent" data-i18n="ui.detalle.default">
           Selecciona un punto para ver la información histórica y científica.
         </div>
