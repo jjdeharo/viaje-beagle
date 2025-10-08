@@ -1,0 +1,680 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Plymouth (zarpe)",
+        "fecha_inicio": "1831-12-27",
+        "fecha_fin": "1831-12-27",
+        "interes": "Inicio del viaje y calibración de instrumentos.",
+        "texto": "Darwin embarca en el HMS Beagle y acompaña al capitán FitzRoy en la verificación de sextantes, cronómetros y barómetros antes de dejar el puerto. Observa cómo los naturalistas anteriores dejaron notas sobre mareas y las compara con mediciones propias. Concluye que el grado de precisión alcanzado permitirá traducir observaciones locales en teorías globales sobre cambios geológicos y distribución de especies.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo I",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chi"
+          }
+        ],
+        "tags": [
+          "inicio",
+          "historia"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.143,
+          50.371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Porto Praya, Santiago (Cabo Verde)",
+        "fecha_inicio": "1832-01-16",
+        "fecha_fin": "1832-01-25",
+        "interes": "Estratos volcánicos escalonados y nivel marino fósil.",
+        "texto": "En los acantilados de Porto Praya distingue colchones de lava negra superpuestos a bancos de conchas cementadas que se elevan varios metros sobre el mar actual. Interpreta las terrazas como evidencia de hundimientos lentos seguidos de levantamientos sucesivos, descartando las erupciones únicas como explicación completa. Comprende que la historia volcánica puede leerse como una cronología gradual, idea clave para su geología comparada.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo I",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chi"
+          }
+        ],
+        "tags": [
+          "geología",
+          "volcanismo"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -23.508,
+          14.919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Salvador de Bahía (Brasil)",
+        "fecha_inicio": "1832-02-28",
+        "fecha_fin": "1832-03-18",
+        "interes": "Bosque tropical como laboratorio de adaptación.",
+        "texto": "Recorre la mata atlántica y documenta lianas, epífitas y manglares que ocupan nichos superpuestos en distintos estratos de luz. Anota cómo la profusión de insectos polinizadores se corresponde con flores especializadas y compara la distribución de raíces aéreas con suelos encharcados. Deduce que la competencia por recursos moldea morfologías convergentes y que los trópicos ofrecen pruebas vivas de la selección natural incipiente.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo I",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chi"
+          }
+        ],
+        "tags": [
+          "zoología",
+          "ecología"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.501,
+          -12.973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Río de Janeiro (Brasil)",
+        "fecha_inicio": "1832-04-04",
+        "fecha_fin": "1832-07-05",
+        "interes": "Muestreo sistemático de fauna y flora de la mata.",
+        "texto": "Instala estaciones de muestreo en diferentes altitudes del bosque carioca y compara escarabajos, aves y bromelias entre claros y sombra cerrada. Observa que pequeños cambios en humedad generan reemplazos rápidos de especies y reflexiona sobre la ventaja de caracteres que facilitan la partición del hábitat. Concluye que la diversidad tropical se explica por variaciones graduales y no por creaciones independientes, reforzando su visión sobre la unidad de tipo.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo II",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chii"
+          }
+        ],
+        "tags": [
+          "botánica",
+          "zoología"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1729,
+          -22.9068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Montevideo (Uruguay)",
+        "fecha_inicio": "1832-07-26",
+        "fecha_fin": "1834-08-24",
+        "interes": "Base para expediciones paleontológicas en la pampa.",
+        "texto": "Desde Montevideo organiza salidas hacia el interior pampeano y establece correspondencia logística con naturalistas británicos. Documenta cómo los estancieros hallan huesos gigantes en barrancas fluviales y planifica su extracción cuidadosa con moldes de yeso. Reconoce que la proximidad entre restos fósiles y fauna actual sugiere reemplazos graduales, clave para cuestionar la extinción cataclísmica inmediata.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo III",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chiii"
+          }
+        ],
+        "tags": [
+          "paleontología",
+          "historia"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.1645,
+          -34.9011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Punta Alta y Bahía Blanca (Argentina)",
+        "fecha_inicio": "1832-09-22",
+        "fecha_fin": "1832-10-15",
+        "interes": "Megafauna pleistocena en estratos marinos.",
+        "texto": "Excava dientes y caparazones de gliptodontes junto a maderas semicarbonizadas en acantilados costeros. Nota que las capas fósiles se alternan con depósitos marinos recientes, implicando que los gigantes terrestres vivieron hasta tiempos muy cercanos. Deduce que la extinción pudo relacionarse con cambios ambientales graduales y no con diluvios puntuales, apoyando la mutabilidad lenta de los ecosistemas.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo IV",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chiv"
+          }
+        ],
+        "tags": [
+          "paleontología",
+          "geología"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.083,
+          -38.72
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Canal Beagle y Tierra del Fuego",
+        "fecha_inicio": "1833-01-12",
+        "fecha_fin": "1833-02-20",
+        "interes": "Observación etnográfica y adaptación al frío extremo.",
+        "texto": "Convive con yámanas reembarcados por FitzRoy y registra cómo su vestimenta mínima contrasta con la eficacia de sus canoas en aguas heladas. Analiza la distribución de musgos y líquenes sobre rocas graníticas expuestas al viento y relaciona la escasa flora con las estrategias de subsistencia fueguina. Concluye que cultura y biología coevolucionan con el clima, evidencia empírica contra la idea de razas fijas e inmutables.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo X",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chx"
+          }
+        ],
+        "tags": [
+          "etnografía",
+          "historia"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.628,
+          -54.865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Islas Malvinas (Port Louis)",
+        "fecha_inicio": "1833-03-01",
+        "fecha_fin": "1833-03-18",
+        "interes": "Relevamiento de rocas pizarrosas y aves endémicas.",
+        "texto": "Compara capas de pizarra con cuarcitas intruidas por diques de diabasa y registra huellas de temperaturas altas en su metamorfismo. Estudia pingüinos y caranchos que conviven en colonias densas, anotando su flexibilidad alimentaria tras la introducción ganadera. Infere que los ambientes insulares moldean conjuntos mixtos de especies nativas y oportunistas, resaltando la dinámica ecológica frente a ocupaciones humanas recientes.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo IX",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chix"
+          }
+        ],
+        "tags": [
+          "geología",
+          "zoología"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.95,
+          -51.7
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Bahía de San Julián (Argentina)",
+        "fecha_inicio": "1833-04-01",
+        "fecha_fin": "1833-05-05",
+        "interes": "Sedimentos patagónicos y experimentos de mareas.",
+        "texto": "Realiza taladros en terrazas marinas para medir fósiles en distintos niveles y determina que el litoral ascendió lentamente tras periodos de hundimiento. Observa cómo guanacos y zorros se concentran en vegas salobres, señalando la influencia de recursos hídricos escasos en la distribución animal. Deduce que paisaje y fauna evolucionan juntos, reforzando su convicción de gradualismo ecológico.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo VIII",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chviii"
+          }
+        ],
+        "tags": [
+          "geología",
+          "ecología"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.725,
+          -49.306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Isla Chiloé (Chile)",
+        "fecha_inicio": "1834-01-11",
+        "fecha_fin": "1834-02-20",
+        "interes": "Bosques templados lluviosos y actividad volcánica.",
+        "texto": "Recorre los bosques valdivianos saturados de humedad y describe coigües cubiertos de epífitas mientras registra erupciones recientes del volcán Osorno. Notifica cómo deslizamientos remueven troncos y crean claros donde se suceden helechos gigantes y aves insectívoras. Concluye que la interacción entre volcanismo y sucesión vegetal ofrece un modelo acelerado de renovación paisajística.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo XIII",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chxiii"
+          }
+        ],
+        "tags": [
+          "volcanismo",
+          "botánica"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.766,
+          -42.48
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Valparaíso y Cuenca de Santiago (Chile)",
+        "fecha_inicio": "1834-03-04",
+        "fecha_fin": "1834-08-14",
+        "interes": "Elevación costera tras el terremoto de 1822.",
+        "texto": "Inspecciona con nivel los bloques coralinos elevados que quedaron tierra adentro después del sismo de 1822 y mide cuántos centímetros superan la línea de marea viva. Entrevista a residentes que recuerdan peces quedando atrapados, usando los relatos como evidencia cronológica. Concluye que los terremotos actúan como pulsos en un proceso continuo de ascenso andino, alineado con el gradualismo de Lyell.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo XII",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chxii"
+          }
+        ],
+        "tags": [
+          "geología",
+          "sismología"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.612,
+          -33.047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Cordillera de los Andes (Cruce Uspallata)",
+        "fecha_inicio": "1834-04-18",
+        "fecha_fin": "1834-05-08",
+        "interes": "Fósiles marinos a gran altitud.",
+        "texto": "Durante la travesía recoge fragmentos de ammonites y conchas incrustadas en calizas situadas a más de tres mil metros de altitud. Compara la inclinación de los estratos con fallas visibles que desplazan capas enteras y calcula tasas de levantamiento usando edades relativas. Confirma que cadenas montañosas pueden ser antiguas plataformas marinas elevadas lentamente, demostrando el poder acumulativo del tiempo geológico.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo XV",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chxv"
+          }
+        ],
+        "tags": [
+          "geología",
+          "paleontología"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.73,
+          -32.823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Lima y Callao (Perú)",
+        "fecha_inicio": "1835-07-19",
+        "fecha_fin": "1835-09-07",
+        "interes": "Preparativos para Galápagos y estudio de costas levantadas.",
+        "texto": "Mientras espera reparaciones del Beagle, examina depósitos marinos elevados cerca de Callao y mide capas de conchas trituradas a varios kilómetros tierra adentro. Visita el gabinete de historia natural de Lima para comparar sus propios especímenes con colecciones coloniales. Deduce que las costas del Pacífico experimentan levantamientos episódicos similares a Chile, lo que anticipa condiciones idóneas para observar variación insular en el siguiente tramo.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo XVI",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chxvi"
+          }
+        ],
+        "tags": [
+          "geología",
+          "historia"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.154,
+          -12.06
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Islas Galápagos (Ecuador)",
+        "fecha_inicio": "1835-09-15",
+        "fecha_fin": "1835-10-20",
+        "interes": "Variación entre islas y especiación incipiente.",
+        "texto": "Reúne pinzones, sinsontes y tortugas identificando cada ejemplar con la isla donde fue capturado, tras notar diferencias en picos y caparazones. Observa volcanes escoriáceos activos y campos de lava recientes que limitan la vegetación, creando microhábitats aislados. Concluye que el aislamiento insular permite diversificación a partir de ancestros comunes, idea germinal de su teoría sobre la selección natural y el origen de especies.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo XVII",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chxvii"
+          }
+        ],
+        "tags": [
+          "biogeografía",
+          "zoología"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.438,
+          -0.953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Tahití y Moorea (Polinesia Francesa)",
+        "fecha_inicio": "1835-11-15",
+        "fecha_fin": "1835-12-05",
+        "interes": "Sociedades polinesias y arrecifes en crecimiento.",
+        "texto": "Estudia los arrecifes franjeantes que rodean Tahití y observa cómo las plataformas coralinas se elevan sobre lagunas de agua tranquila. Dialoga con sacerdotes protestantes y tahitianos sobre prácticas agrícolas compartidas y toma nota de la introducción de nuevas especies comestibles. Infere que la organización social y el coral prosperan gracias a un equilibrio entre aporte humano y crecimiento natural, anticipando su teoría de atolones.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo XVIII",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chxviii"
+          }
+        ],
+        "tags": [
+          "etnografía",
+          "corales"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.563,
+          -17.537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Bahía de las Islas (Nueva Zelanda)",
+        "fecha_inicio": "1835-12-21",
+        "fecha_fin": "1836-01-04",
+        "interes": "Paisajes volcánicos templados y contacto maorí.",
+        "texto": "Visita misiones anglicanas y asentamientos maoríes, observando cómo cultivos de kumara conviven con bosques de kauri en suelos volcánicos drenados. Registra la rápida erosión de colinas deforestadas y su impacto en estuarios ricos en moluscos. Concluye que la introducción europea altera ciclos ecológicos frágiles, mostrando cómo la modificación cultural acelera transformaciones ambientales.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo XVIII",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chxviii"
+          }
+        ],
+        "tags": [
+          "etnografía",
+          "ecología"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.05,
+          -35.22
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Sídney (Australia)",
+        "fecha_inicio": "1836-01-12",
+        "fecha_fin": "1836-01-30",
+        "interes": "Colonización británica y fauna marsupial.",
+        "texto": "Revisa colecciones del Museo Australiano y compara marsupiales con mamíferos placentarios, destacando convergencias funcionales entre lobos y dingos. Observa el trazado geométrico de la colonia y la rapidez con que el suelo arcilloso se degrada bajo pastoreo intensivo. Deduce que la historia natural australiana exige explicar divergencias profundas a partir de un ancestro común adaptado a ambientes aislados.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo XIX",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chxix"
+          }
+        ],
+        "tags": [
+          "zoología",
+          "historia"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.209,
+          -33.865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Hobart, isla de Tasmania",
+        "fecha_inicio": "1836-02-05",
+        "fecha_fin": "1836-02-17",
+        "interes": "Bosques templados y especies relictas.",
+        "texto": "Explora bosques de eucaliptos gigantes alternados con matorrales densos donde registra monotremas y marsupiales nocturnos cazados por colonos. Observa tocones quemados y compara la regeneración vegetal tras incendios controlados por pueblos palawa con prácticas europeas. Concluye que las perturbaciones periódicas pueden sostener diversidad si respetan los ritmos ecológicos locales.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo XIX",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chxix"
+          }
+        ],
+        "tags": [
+          "botánica",
+          "ecología"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.327,
+          -42.882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "King George Sound (Australia Occidental)",
+        "fecha_inicio": "1836-03-06",
+        "fecha_fin": "1836-03-14",
+        "interes": "Flora mediterránea austral y endemismos.",
+        "texto": "Cataloga plantas con hojas duras y flores tubulares adaptadas a suelos pobres en fósforo, mientras identifica insectos polinizadores muy especializados. Observa cómo el fuego natural abre espacio a bancos de semillas persistentes y genera mosaicos de vegetación en pocos años. Entiende que el aislamiento prolongado del suroeste australiano favorece linajes únicos, reforzando el concepto de regiones biogeográficas.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo XIX",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chxix"
+          }
+        ],
+        "tags": [
+          "botánica",
+          "biogeografía"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.883,
+          -35.023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Islas Cocos (Keeling)",
+        "fecha_inicio": "1836-04-01",
+        "fecha_fin": "1836-04-12",
+        "interes": "Formación de atolones por subsidencia oceánica.",
+        "texto": "Mide profundidades desde la goleta y registra cómo el arrecife coralino crece hacia arriba mientras el fondo volcánico se hunde. Analiza la granulometría de las playas para entender el ritmo de erosión y deposición que alimenta las islas bajas. Concluye que los atolones nacen de volcanes sumergidos y que la biología constructora de corales puede seguir al hundimiento, hipótesis que publicará en 1842.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo XX",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chxx"
+          }
+        ],
+        "tags": [
+          "corales",
+          "geología"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.83,
+          -12.16
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Mauricio (Puerto de Port Louis)",
+        "fecha_inicio": "1836-04-29",
+        "fecha_fin": "1836-05-09",
+        "interes": "Montes basálticos y jardines botánicos.",
+        "texto": "Documenta la morfología en herradura del cráter de Trou aux Cerfs y contrasta sus lavas con los basaltos de Cabo Verde, buscando patrones universales. Visita el Jardín Botánico de Pamplemousses para comparar especies antillanas naturalizadas con endemismos mauricianos. Infere que las islas volcánicas comparten procesos iniciales, pero la colonización vegetal depende de corrientes y vientos dominantes.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo XXI",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chxxi"
+          }
+        ],
+        "tags": [
+          "volcanismo",
+          "botánica"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.505,
+          -20.16
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Ciudad del Cabo (Sudáfrica)",
+        "fecha_inicio": "1836-05-31",
+        "fecha_fin": "1836-06-18",
+        "interes": "Reino floral del Cabo y convergencias ecológicas.",
+        "texto": "Recorre el Jardín de Kirstenbosch y describe proteas, ericas y restios que ocupan nichos similares a plantas sudamericanas aunque no estén emparentadas. Observa la erosión en laderas arenosas tras la tala de bosques nativos para cultivar viñedos. Concluye que diferentes continentes generan soluciones botánicas comparables ante presiones ambientales parecidas, reforzando la noción de convergencia adaptativa.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo XXI",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chxxi"
+          }
+        ],
+        "tags": [
+          "botánica",
+          "ecología"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.49,
+          -34.35
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Santa Elena (Atlántico sur)",
+        "fecha_inicio": "1836-07-08",
+        "fecha_fin": "1836-07-14",
+        "interes": "Isla oceánica antigua con flora endémica.",
+        "texto": "Examina columnas de basalto erosionadas y compara su mineralogía con la de lavas más jóvenes observadas en otros puertos. Recorre plantaciones reforestadas por los británicos y evalúa cómo especies exóticas desplazan a la vegetación endémica de zonas húmedas. Concluye que la larga historia aislada de la isla generó organismos exclusivos, vulnerables a la intervención humana acelerada.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo XXI",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chxxi"
+          }
+        ],
+        "tags": [
+          "geología",
+          "biogeografía"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7,
+          -15.95
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Isla Ascensión",
+        "fecha_inicio": "1836-07-19",
+        "fecha_fin": "1836-07-23",
+        "interes": "Colonización biológica en suelos volcánicos jóvenes.",
+        "texto": "Analiza conos de escoria recientes y registra cómo musgos y líquenes colonizan grietas protegidas, seguidos por gramíneas llevadas por guarniciones británicas. Observa fragatas y trópicos que nidifican en acantilados expuestos al viento, ajustando sus ciclos al recurso marino. Infere que la dispersión a larga distancia basta para poblar islas remotas si existen microhábitats disponibles.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo XXI",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chxxi"
+          }
+        ],
+        "tags": [
+          "ecología",
+          "volcanismo"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -14.37,
+          -7.93
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Falmouth (regreso)",
+        "fecha_inicio": "1836-10-02",
+        "fecha_fin": "1836-10-02",
+        "interes": "Cierre de la circunnavegación y recopilación científica.",
+        "texto": "Desembarca en Falmouth con 12 cuadernos de campo, 1 529 especímenes en alcohol y centenares de rocas etiquetadas por origen. Revisa los instrumentos de medición para verificar su deriva tras casi cinco años y anota correcciones que permitirán interpretar los datos con rigor. Comprende que la síntesis de estas colecciones transformará la historia natural británica y abre la puerta a nuevas teorías evolutivas.",
+        "enlaces": [
+          {
+            "label": "Diario, capítulo XXI",
+            "url": "https://www.gutenberg.org/files/3704/3704-h/3704-h.htm#chxxi"
+          }
+        ],
+        "tags": [
+          "fin",
+          "historia"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.071,
+          50.154
+        ]
+      }
+    }
+  ]
+}

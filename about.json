@@ -1,0 +1,19 @@
+{
+  "fuentes": [
+    {
+      "label": "Darwin Online",
+      "url": "https://darwin-online.org.uk/"
+    },
+    {
+      "label": "The Voyage of the Beagle (1839)",
+      "url": "https://www.gutenberg.org/ebooks/3704"
+    },
+    {
+      "label": "Correspondencia de Charles Darwin",
+      "url": "https://www.darwinproject.ac.uk/"
+    }
+  ],
+  "licencia_datos": "CC BY-SA 4.0",
+  "licencia_codigo": "AGPL-3.0-or-later",
+  "version": "1.0.0"
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Viaje del HMS Beagle</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha512-Zcn6bjR/8RZbLEpLIeOwNtzREBAJnUKESxces60Mpoj+2okopSAcSUIUOseddDm0cxnGQzxIR7vJgsLZbdLE3w=="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#map">Saltar al mapa</a>
+    <header>
+      <h1>Ruta científica del HMS Beagle</h1>
+      <div class="header-actions">
+        <label for="languageSwitcher" data-i18n="ui.idioma">Idioma</label>
+        <select id="languageSwitcher" aria-label="Idioma" data-i18n-aria-label="ui.idioma">
+          <option value="es" selected>Español</option>
+          <option value="en">English</option>
+        </select>
+        <button id="aboutButton" type="button" data-i18n="ui.acerca">Acerca de</button>
+      </div>
+    </header>
+    <main>
+      <aside class="panel panel-filters">
+        <h2 data-i18n="ui.filtros">Filtros</h2>
+        <div class="filter-group">
+          <label for="yearRange" data-i18n="ui.año">Año</label>
+          <input
+            id="yearRange"
+            type="range"
+            min="1831"
+            max="1836"
+            value="1836"
+            step="1"
+            aria-describedby="yearValue"
+            aria-label="Filtrar por último año de escala"
+            data-i18n-aria-label="ui.slider.aria"
+          />
+          <output id="yearValue" for="yearRange">1836</output>
+        </div>
+        <button id="fullRouteBtn" type="button" data-i18n="ui.ruta">Ver ruta completa</button>
+        <div
+          class="step-controls"
+          role="group"
+          aria-label="Recorrer puntos"
+          data-i18n-aria-label="ui.nav"
+        >
+          <button
+            id="prevStopBtn"
+            type="button"
+            aria-label="Punto anterior"
+            data-i18n-aria-label="ui.anterior"
+          >&lt;</button>
+          <button
+            id="nextStopBtn"
+            type="button"
+            aria-label="Punto siguiente"
+            data-i18n-aria-label="ui.siguiente"
+          >&gt;</button>
+        </div>
+        <div class="filter-group">
+          <label class="sr-only" for="searchInput" data-i18n="ui.busqueda.aria">Buscar escala por nombre</label>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Buscar..."
+            aria-label="Buscar escala por nombre"
+            data-i18n-placeholder="ui.busca"
+            data-i18n-aria-label="ui.busqueda.aria"
+          />
+        </div>
+        <fieldset class="filter-group" aria-labelledby="tagLegend">
+          <legend id="tagLegend" data-i18n="ui.tags">Temáticas</legend>
+          <div class="tag-list" id="tagList"></div>
+        </fieldset>
+        <div id="status" role="status" aria-live="polite" data-i18n="ui.loading">Cargando datos...</div>
+      </aside>
+      <section class="map-wrapper">
+        <div id="map" role="application" aria-label="Mapa interactivo de la ruta del Beagle"></div>
+      </section>
+      <aside class="panel panel-detail">
+        <h2 id="detailTitle">Detalle</h2>
+        <div id="detailContent" data-i18n="ui.detalle.default">
+          Selecciona un punto para ver la información histórica y científica.
+        </div>
+      </aside>
+    </main>
+
+    <div
+      id="aboutModal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="aboutTitle"
+      hidden
+    >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="aboutTitle" data-i18n="ui.modal.titulo">Acerca de este proyecto</h2>
+          <button
+            id="closeAbout"
+            type="button"
+            class="modal-close"
+            aria-label="Cerrar"
+            data-i18n-aria-label="ui.cerrar"
+          >
+            ×
+          </button>
+        </div>
+        <div class="modal-body">
+          <dl>
+            <dt data-i18n="ui.modal.version">Versión</dt>
+            <dd id="aboutVersion">–</dd>
+            <dt data-i18n="ui.modal.datos">Licencia de datos</dt>
+            <dd id="aboutDataLicense">–</dd>
+            <dt data-i18n="ui.modal.codigo">Licencia de código</dt>
+            <dd id="aboutCodeLicense">–</dd>
+            <dt data-i18n="ui.modal.fuentes">Fuentes primarias</dt>
+            <dd>
+              <ul id="aboutSources"></ul>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <noscript>Este visor requiere JavaScript para cargar el mapa interactivo.</noscript>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha512-BwHfrr4c9kmRkLw6iXFdzcdWV/PGkVgiIyIWLLlTSXzWQzxuSg4DiQUCpauz/EWjgk5TYQqX/kvn9pG1NpYfqg=="
+      crossorigin=""
+    ></script>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
