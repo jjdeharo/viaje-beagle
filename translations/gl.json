@@ -31,6 +31,7 @@
   "ui.modal.datos": "Licenza de datos",
   "ui.modal.codigo": "Licenza de código",
   "ui.modal.fuentes": "Fontes primarias",
+  "ui.modal.creditos": "Créditos",
   "ui.cerrar": "Pechar",
   "map.base.osm": "OpenStreetMap",
   "map.base.hot": "OSM Humanitario"

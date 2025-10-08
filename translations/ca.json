@@ -31,6 +31,7 @@
   "ui.modal.datos": "Llicència de dades",
   "ui.modal.codigo": "Llicència de codi",
   "ui.modal.fuentes": "Fonts primàries",
+  "ui.modal.creditos": "Crèdits",
   "ui.cerrar": "Tanca",
   "map.base.osm": "OpenStreetMap",
   "map.base.hot": "OSM Humanitari"

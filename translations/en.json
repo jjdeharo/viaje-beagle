@@ -31,6 +31,7 @@
   "ui.modal.datos": "Data license",
   "ui.modal.codigo": "Code license",
   "ui.modal.fuentes": "Primary sources",
+  "ui.modal.creditos": "Credits",
   "ui.cerrar": "Close",
   "map.base.osm": "OpenStreetMap",
   "map.base.hot": "Humanitarian OSM"
