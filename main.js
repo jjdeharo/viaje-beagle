@@ -126,6 +126,7 @@ const languageSwitcher = document.getElementById("languageSwitcher");
 const fullRouteBtn = document.getElementById("fullRouteBtn");
 const prevStopBtn = document.getElementById("prevStopBtn");
 const nextStopBtn = document.getElementById("nextStopBtn");
+const darwinButton = document.getElementById("darwinButton");
 const aboutButton = document.getElementById("aboutButton");
 const aboutModal = document.getElementById("aboutModal");
 const closeAbout = document.getElementById("closeAbout");
@@ -632,6 +633,10 @@ function attachListeners() {
   prevStopBtn.addEventListener("click", () => stepFeature(-1));
   nextStopBtn.addEventListener("click", () => stepFeature(1));
 
+  if (darwinButton) {
+    darwinButton.addEventListener("click", () => openDarwinChat());
+  }
+
   languageSwitcher.addEventListener("change", async () => {
     state.lang = languageSwitcher.value;
     if (!isSupportedLanguage(state.lang)) {
@@ -764,6 +769,35 @@ function populateAbout() {
     li.appendChild(link);
     aboutSources.appendChild(li);
   });
+}
+
+function openDarwinChat() {
+  const url = "https://notebooklm.google.com/notebook/6e7f576b-f7c2-4d5a-868d-edb5067eb626";
+  const viewportWidth = window.innerWidth || document.documentElement.clientWidth || (window.screen ? window.screen.width : 960);
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight || (window.screen ? window.screen.height : 700);
+  const width = Math.min(960, Math.max(640, viewportWidth - 80));
+  const height = Math.min(720, Math.max(480, viewportHeight - 80));
+  const screenLeft = typeof window.screenLeft === "number" ? window.screenLeft : (typeof window.screenX === "number" ? window.screenX : 0);
+  const screenTop = typeof window.screenTop === "number" ? window.screenTop : (typeof window.screenY === "number" ? window.screenY : 0);
+  const left = screenLeft + Math.max(0, (viewportWidth - width) / 2);
+  const top = screenTop + Math.max(0, (viewportHeight - height) / 2);
+  const features = [
+    "popup=yes",
+    "resizable=yes",
+    "scrollbars=yes",
+    "toolbar=no",
+    "menubar=no",
+    "location=no",
+    "status=no",
+    `width=${Math.round(width)}`,
+    `height=${Math.round(height)}`,
+    `left=${Math.round(left)}`,
+    `top=${Math.round(top)}`
+  ].join(",");
+  const newWindow = window.open(url, "darwinNotebook", features);
+  if (newWindow && typeof newWindow.focus === "function") {
+    newWindow.focus();
+  }
 }
 
 function openAbout() {

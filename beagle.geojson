@@ -61,7 +61,7 @@
       "properties": {
         "nombre": "Porto Praya, Santiago (Cabo Verde)",
         "fecha_inicio": "1832-01-16",
-        "fecha_fin": "1832-01-25",
+        "fecha_fin": "1832-02-07",
         "interes": "Estratos volcánicos escalonados y nivel marino fósil.",
         "texto": "En los acantilados de Porto Praya distingue colchones de lava negra superpuestos a bancos de conchas cementadas que se elevan varios metros sobre el mar actual. Interpreta las terrazas como evidencia de hundimientos lentos seguidos de levantamientos sucesivos, descartando las erupciones únicas como explicación completa. Comprende que la historia volcánica puede leerse como una cronología gradual, idea clave para su geología comparada.",
         "enlaces": [
@@ -226,9 +226,9 @@
       "properties": {
         "nombre": "Montevideo (Uruguay)",
         "fecha_inicio": "1832-07-26",
-        "fecha_fin": "1834-08-24",
+        "fecha_fin": "1832-08-19",
         "interes": "Base para expediciones paleontológicas en la pampa.",
-        "texto": "Desde Montevideo organiza salidas hacia el interior pampeano y establece correspondencia logística con naturalistas británicos. Documenta cómo los estancieros hallan huesos gigantes en barrancas fluviales y planifica su extracción cuidadosa con moldes de yeso. Reconoce que la proximidad entre restos fósiles y fauna actual sugiere reemplazos graduales, clave para cuestionar la extinción cataclísmica inmediata.",
+        "texto": "Desde Montevideo organiza salidas hacia el interior pampeano y establece correspondencia logística con naturalistas británicos. Documenta cómo los estancieros hallan huesos gigantes en barrancas fluviales y planifica su extracción cuidadosa con moldes de yeso. Reconoce que la proximidad entre restos fósiles y fauna actual sugiere reemplazos graduales, clave para cuestionar la extinción cataclísmica inmediata. (Primera estancia. Hubo varias visitas entre 1832 y 1834.)",
         "enlaces": [
           {
             "label": "Diario, capítulo III",
@@ -280,7 +280,7 @@
       "type": "Feature",
       "properties": {
         "nombre": "Punta Alta y Bahía Blanca (Argentina)",
-        "fecha_inicio": "1832-09-22",
+        "fecha_inicio": "1832-09-06",
         "fecha_fin": "1832-10-15",
         "interes": "Megafauna pleistocena en estratos marinos.",
         "texto": "Excava dientes y caparazones de gliptodontes junto a maderas semicarbonizadas en acantilados costeros. Nota que las capas fósiles se alternan con depósitos marinos recientes, implicando que los gigantes terrestres vivieron hasta tiempos muy cercanos. Deduce que la extinción pudo relacionarse con cambios ambientales graduales y no con diluvios puntuales, apoyando la mutabilidad lenta de los ecosistemas.",
@@ -445,8 +445,8 @@
       "type": "Feature",
       "properties": {
         "nombre": "Bahía de San Julián (Argentina)",
-        "fecha_inicio": "1833-04-01",
-        "fecha_fin": "1833-05-05",
+        "fecha_inicio": "1834-01-09",
+        "fecha_fin": "1834-01-18",
         "interes": "Sedimentos patagónicos y experimentos de mareas.",
         "texto": "Realiza taladros en terrazas marinas para medir fósiles en distintos niveles y determina que el litoral ascendió lentamente tras periodos de hundimiento. Observa cómo guanacos y zorros se concentran en vegas salobres, señalando la influencia de recursos hídricos escasos en la distribución animal. Deduce que paisaje y fauna evolucionan juntos, reforzando su convicción de gradualismo ecológico.",
         "enlaces": [
@@ -500,8 +500,8 @@
       "type": "Feature",
       "properties": {
         "nombre": "Isla Chiloé (Chile)",
-        "fecha_inicio": "1834-01-11",
-        "fecha_fin": "1834-02-20",
+        "fecha_inicio": "1834-06-01",
+        "fecha_fin": "1834-12-31",
         "interes": "Bosques templados lluviosos y actividad volcánica.",
         "texto": "Recorre los bosques valdivianos saturados de humedad y describe coigües cubiertos de epífitas mientras registra erupciones recientes del volcán Osorno. Notifica cómo deslizamientos remueven troncos y crean claros donde se suceden helechos gigantes y aves insectívoras. Concluye que la interacción entre volcanismo y sucesión vegetal ofrece un modelo acelerado de renovación paisajística.",
         "enlaces": [
@@ -555,7 +555,7 @@
       "type": "Feature",
       "properties": {
         "nombre": "Valparaíso y Cuenca de Santiago (Chile)",
-        "fecha_inicio": "1834-03-04",
+        "fecha_inicio": "1834-07-23",
         "fecha_fin": "1834-08-14",
         "interes": "Elevación costera tras el terremoto de 1822.",
         "texto": "Inspecciona con nivel los bloques coralinos elevados que quedaron tierra adentro después del sismo de 1822 y mide cuántos centímetros superan la línea de marea viva. Entrevista a residentes que recuerdan peces quedando atrapados, usando los relatos como evidencia cronológica. Concluye que los terremotos actúan como pulsos en un proceso continuo de ascenso andino, alineado con el gradualismo de Lyell.",
@@ -610,8 +610,8 @@
       "type": "Feature",
       "properties": {
         "nombre": "Cordillera de los Andes (Cruce Uspallata)",
-        "fecha_inicio": "1834-04-18",
-        "fecha_fin": "1834-05-08",
+        "fecha_inicio": "1835-03-11",
+        "fecha_fin": "1835-04-16",
         "interes": "Fósiles marinos a gran altitud.",
         "texto": "Durante la travesía recoge fragmentos de ammonites y conchas incrustadas en calizas situadas a más de tres mil metros de altitud. Compara la inclinación de los estratos con fallas visibles que desplazan capas enteras y calcula tasas de levantamiento usando edades relativas. Confirma que cadenas montañosas pueden ser antiguas plataformas marinas elevadas lentamente, demostrando el poder acumulativo del tiempo geológico.",
         "enlaces": [
@@ -776,7 +776,7 @@
       "properties": {
         "nombre": "Tahití y Moorea (Polinesia Francesa)",
         "fecha_inicio": "1835-11-15",
-        "fecha_fin": "1835-12-05",
+        "fecha_fin": "1835-11-25",
         "interes": "Sociedades polinesias y arrecifes en crecimiento.",
         "texto": "Estudia los arrecifes franjeantes que rodean Tahití y observa cómo las plataformas coralinas se elevan sobre lagunas de agua tranquila. Dialoga con sacerdotes protestantes y tahitianos sobre prácticas agrícolas compartidas y toma nota de la introducción de nuevas especies comestibles. Infere que la organización social y el coral prosperan gracias a un equilibrio entre aporte humano y crecimiento natural, anticipando su teoría de atolones.",
         "enlaces": [
@@ -831,7 +831,7 @@
       "properties": {
         "nombre": "Bahía de las Islas (Nueva Zelanda)",
         "fecha_inicio": "1835-12-21",
-        "fecha_fin": "1836-01-04",
+        "fecha_fin": "1835-12-29",
         "interes": "Paisajes volcánicos templados y contacto maorí.",
         "texto": "Visita misiones anglicanas y asentamientos maoríes, observando cómo cultivos de kumara conviven con bosques de kauri en suelos volcánicos drenados. Registra la rápida erosión de colinas deforestadas y su impacto en estuarios ricos en moluscos. Concluye que la introducción europea altera ciclos ecológicos frágiles, mostrando cómo la modificación cultural acelera transformaciones ambientales.",
         "enlaces": [
@@ -1050,7 +1050,7 @@
       "type": "Feature",
       "properties": {
         "nombre": "Islas Cocos (Keeling)",
-        "fecha_inicio": "1836-04-01",
+        "fecha_inicio": "1836-04-02",
         "fecha_fin": "1836-04-12",
         "interes": "Formación de atolones por subsidencia oceánica.",
         "texto": "Mide profundidades desde la goleta y registra cómo el arrecife coralino crece hacia arriba mientras el fondo volcánico se hunde. Analiza la granulometría de las playas para entender el ritmo de erosión y deposición que alimenta las islas bajas. Concluye que los atolones nacen de volcanes sumergidos y que la biología constructora de corales puede seguir al hundimiento, hipótesis que publicará en 1842.",
@@ -1105,7 +1105,7 @@
       "type": "Feature",
       "properties": {
         "nombre": "Mauricio (Puerto de Port Louis)",
-        "fecha_inicio": "1836-04-29",
+        "fecha_inicio": "1836-04-30",
         "fecha_fin": "1836-05-09",
         "interes": "Montes basálticos y jardines botánicos.",
         "texto": "Documenta la morfología en herradura del cráter de Trou aux Cerfs y contrasta sus lavas con los basaltos de Cabo Verde, buscando patrones universales. Visita el Jardín Botánico de Pamplemousses para comparar especies antillanas naturalizadas con endemismos mauricianos. Infere que las islas volcánicas comparten procesos iniciales, pero la colonización vegetal depende de corrientes y vientos dominantes.",
@@ -1216,7 +1216,7 @@
       "properties": {
         "nombre": "Santa Elena (Atlántico sur)",
         "fecha_inicio": "1836-07-08",
-        "fecha_fin": "1836-07-14",
+        "fecha_fin": "1836-07-13",
         "interes": "Isla oceánica antigua con flora endémica.",
         "texto": "Examina columnas de basalto erosionadas y compara su mineralogía con la de lavas más jóvenes observadas en otros puertos. Recorre plantaciones reforestadas por los británicos y evalúa cómo especies exóticas desplazan a la vegetación endémica de zonas húmedas. Concluye que la larga historia aislada de la isla generó organismos exclusivos, vulnerables a la intervención humana acelerada.",
         "enlaces": [
@@ -1271,7 +1271,7 @@
       "properties": {
         "nombre": "Isla Ascensión",
         "fecha_inicio": "1836-07-19",
-        "fecha_fin": "1836-07-23",
+        "fecha_fin": "1836-07-22",
         "interes": "Colonización biológica en suelos volcánicos jóvenes.",
         "texto": "Analiza conos de escoria recientes y registra cómo musgos y líquenes colonizan grietas protegidas, seguidos por gramíneas llevadas por guarniciones británicas. Observa fragatas y trópicos que nidifican en acantilados expuestos al viento, ajustando sus ciclos al recurso marino. Infere que la dispersión a larga distancia basta para poblar islas remotas si existen microhábitats disponibles.",
         "enlaces": [
